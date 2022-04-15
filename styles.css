@@ -103,7 +103,7 @@ main {
   height: 100%;
   width: 100%;
   background: linear-gradient(0deg, #000000, #000000);
-  opacity: 0.3;
+  opacity: 0.4;
   filter: blur(50px);
   -webkit-filter: blur(50px);
 }
@@ -155,4 +155,33 @@ main {
   justify-content: center;
   padding: 16px 18px 16px;
   border-radius: 0px 24px 24px 0px;
+}
+
+.movie-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.movie-desc {
+  color: var(--gray1);
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.bottom-margin {
+  margin-bottom: 12px;
+}
+
+.movie-about-title {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: -4px;
+  padding: 0px;
+}
+
+.star-display {
+  margin-top: 12px;
 }
