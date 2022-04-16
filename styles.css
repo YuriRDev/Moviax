@@ -285,3 +285,93 @@ div.destaque {
   border-bottom: solid 2px var(--primary);
   padding: 0px 16px 8px 16px;
 }
+
+/* Avaliacoes */
+
+div.avaliacoes {
+  margin-top: 180px;
+}
+
+.avaliacoes-svg-container {
+  height: 30px;
+  width: 26px;
+}
+
+.feedback-person-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.feedback-person-header img {
+  height: 42px;
+  width: 42px;
+  border-radius: 10px;
+}
+
+.feedback-person-info {
+  margin: 0px;
+  padding: 0px;
+  margin-left: 12px;
+}
+
+.feedback-person-info h6 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+}
+
+.feedback-person-info p {
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  color: var(--gray1);
+  margin-top: 4px;
+}
+
+p.feedback-p {
+  margin-top: 16px;
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--gray1);
+}
+
+.feedback-p span {
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.feedback-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--gray2);
+}
+
+/*
+  ENTREVISTAS CONTAINER
+*/
+
+.entrevista {
+  width: 100%;
+  margin-top: 128px;
+  padding: 64px 0px;
+  background: linear-gradient(
+      101.49deg,
+      rgba(26, 1, 66, 0.2) 3.26%,
+      rgba(0, 0, 0, 0) 94.2%
+    ),
+    #1e1f24;
+}
+
+.entrevistas-svg-container {
+  height: 30px;
+  width: 20px;
+}
+
+.videoentrevista {
+}
+
+.carousel-indicators {
+  z-index: 100 !important;
+}
