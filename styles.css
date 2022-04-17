@@ -1,5 +1,6 @@
 :root {
   --primary: #9146ff;
+  --primary1: #381171;
   --light: #ffffff;
   --gray1: #b3b0b8;
   --gray2: #7c7a80;
@@ -342,6 +343,9 @@ p.feedback-p {
 
 .feedback-footer {
   width: 100%;
+  padding: 32px 0px;
+
+  width: 100%;
   display: flex;
   justify-content: space-between;
   font-size: 12px;
@@ -353,9 +357,9 @@ p.feedback-p {
 */
 
 .entrevista {
-  width: 100%;
   margin-top: 128px;
   padding: 64px 0px;
+  padding-bottom: 80px;
   background: linear-gradient(
       101.49deg,
       rgba(26, 1, 66, 0.2) 3.26%,
@@ -370,4 +374,231 @@ p.feedback-p {
 }
 
 .videoentrevista {
+  margin-top: 48px !important;
+}
+
+.videoentrevista iframe {
+  border-radius: 15px;
+  height: 230px;
+}
+
+.videoentrevista div {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.videoentrevista div h3 {
+ font-size: 18px; 
+  margin: 0px;
+  padding: 0px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+
+}
+
+.videoentrevista div p {
+  font-size: 14px;
+  color: var(--gray1);
+  font-weight: 400;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 8px
+}
+
+
+.videoentrevista div p b{
+  color: var(--light);
+  font-weight: 500;
+}
+
+.videoentrevista div div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 98%;
+  align-items: center;
+}
+
+/*
+  NOVIDADES E SOBRE
+*/
+
+.novidades-e-sobre{
+  margin-top: 64px;
+}
+
+
+.novidades-svg-container {
+  width: 30px;
+  height: 27px;
+}
+
+div.novidades-container{
+  margin-top: 48px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.novidade {
+  width: 100%;
+  padding-bottom: 12px;
+  border-bottom: solid 2px var(--black2);
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.novidade-image {
+  min-width: 200px;
+  height: 132px;
+  margin-right: 16px;
+  background-color: var(--gray2);
+  border-radius: 8px;
+}
+
+.novidade-text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.novidade-text h6 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+}
+
+.novidade-text p {
+  color: var(--gray1);
+  font-size: 13px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.novidade-tags-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+}
+
+.tag {
+  padding: 4px 12px;
+  border-radius: 10px;
+  background-color: var(--primary1);
+  font-size: 10px;
+  color: var(--light);
+  display: block;
+  margin-right: 8px;
+}
+
+.sobre-svg-container {
+  height: 24px;
+  width: 24px;
+}
+
+.sobre-text {
+  color: var(--gray1);
+  font-size: 14px;
+  margin-top: 48px;
+}
+
+.editorial-container {
+  margin-bottom: 32px;
+  margin-top: 12px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.editorial-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.editorial-item p {
+  color: var(--light);
+  margin-right: 8px;
+}
+
+.editorial-item p.editorial-item-sub {
+  color: var(--gray1)
+}
+
+.editorial-svg-container {
+  height: 16px;
+  width: 16px;
+  margin-right: 8px;
+}
+
+.social-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 16px;
+}
+
+.facebook-svg-container {
+  height: 28px;
+  width: 28px;
+  cursor: pointer;
+  margin-right: 16px;
+}
+
+.twitter-svg-container {
+  height: 28px;
+  width: 30px;
+  cursor: pointer;
+  margin-right: 16px;
+}
+
+.instagram-svg-container {
+  height: 28px;
+  width: 28px;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  padding: 32px;
+  background-color: var(--black2);
+  margin-top: 48px;
+  padding-bottom: 48px;
+}
+
+.copyright {
+  color: var(--gray1);
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
+}
+
+.copyright span {
+  color: var(--light);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.copyright-svg-icon {
+  height: 32px;
+  width: 32px;
+}
+
+.aligned-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.margintop {
+  margin-top: 64px !important ;
 }
