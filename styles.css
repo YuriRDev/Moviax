@@ -80,7 +80,7 @@ div.header {
 
 /* Main! */
 main {
-  margin-top: 124px;
+  margin-top: 64px;
 }
 
 .filme-container {
@@ -206,7 +206,7 @@ EM DESTAQUE!
 */
 
 div.destaque {
-  margin-top: 128px;
+  margin-top: 64px;
 }
 
 .title-container {
@@ -326,7 +326,7 @@ div.avaliacoes {
 
 p.feedback-p {
   margin-top: 16px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: var(--gray1);
 }
@@ -385,14 +385,12 @@ p.feedback-p {
   padding: 0px;
 }
 
-
 .videoentrevista div h3 {
- font-size: 18px; 
+  font-size: 18px;
   margin: 0px;
   padding: 0px;
   margin-top: 8px;
   margin-bottom: 12px;
-
 }
 
 .videoentrevista div p {
@@ -401,11 +399,10 @@ p.feedback-p {
   font-weight: 400;
   padding: 0px;
   margin: 0px;
-  margin-bottom: 8px
+  margin-bottom: 8px;
 }
 
-
-.videoentrevista div p b{
+.videoentrevista div p b {
   color: var(--light);
   font-weight: 500;
 }
@@ -422,17 +419,16 @@ p.feedback-p {
   NOVIDADES E SOBRE
 */
 
-.novidades-e-sobre{
+.novidades-e-sobre {
   margin-top: 64px;
 }
-
 
 .novidades-svg-container {
   width: 30px;
   height: 27px;
 }
 
-div.novidades-container{
+div.novidades-container {
   margin-top: 48px;
   display: flex;
   align-items: flex-start;
@@ -454,6 +450,7 @@ div.novidades-container{
   margin-right: 16px;
   background-color: var(--gray2);
   border-radius: 8px;
+  object-fit: cover;
 }
 
 .novidade-text {
@@ -479,7 +476,7 @@ div.novidades-container{
 .novidade-tags-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start; 
+  justify-content: flex-start;
 }
 
 .tag {
@@ -524,7 +521,7 @@ div.novidades-container{
 }
 
 .editorial-item p.editorial-item-sub {
-  color: var(--gray1)
+  color: var(--gray1);
 }
 
 .editorial-svg-container {
@@ -554,13 +551,11 @@ div.novidades-container{
   margin-right: 16px;
 }
 
-
 .align-left {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-
 
 .instagram-svg-container {
   height: 28px;
@@ -606,7 +601,6 @@ footer {
   margin-top: 64px !important ;
 }
 
-
 @media (max-width: 1200px) {
   .navs-container {
     display: none;
@@ -650,7 +644,7 @@ footer {
     display: flex;
     flex-direction: column;
   }
- 
+
   .novidade-image {
     margin-bottom: 24px;
   }
@@ -667,7 +661,7 @@ footer {
   }
 
   .novidade-text h6 {
-    margin-top: 12px
+    margin-top: 12px;
   }
 
   .feedback-person-info h6 {
@@ -675,7 +669,7 @@ footer {
     padding: 0px;
     font-size: 14px;
   }
-  
+
   .feedback-person-info p {
     margin: 0px;
     padding: 0px;
@@ -683,7 +677,7 @@ footer {
     color: var(--gray1);
     margin-top: 4px;
   }
-  
+
   p.feedback-p {
     margin-top: 16px;
     font-size: 12px;
@@ -691,10 +685,38 @@ footer {
     color: var(--gray1);
   }
 
+  .cta-trailer {
+    position: absolute;
+    bottom: 80px;
+    left: 32px;
+    background-color: white;
+    color: var(--black1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 24px;
+    cursor: pointer;
+    opacity: 1 !important;
+  }
 }
 
-@media(max-width: 768px){
-  
+@media (max-width: 768px) {
+  .cta-trailer {
+    position: absolute;
+    bottom: -24px !important;
+    left: 32px;
+    background-color: white;
+    color: var(--black1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 24px;
+    cursor: pointer;
+    opacity: 1 !important;
+  }
+}
+
+@media (max-width: 768px) {
   .align-left {
     display: flex;
     align-items: center;
@@ -702,5 +724,39 @@ footer {
     margin-top: 24px !important;
   }
 
+  .cta-trailer {
+    position: absolute;
+    bottom: 24px;
+    left: 32px;
+    background-color: white;
+    color: var(--black1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 24px;
+    cursor: pointer;
+    opacity: 1 !important;
+  }
 
+  .cta-trailer p {
+    color: var(--black1);
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 12px;
+    margin: 0px 14px 0px 24px;
+  }
+
+  .cta-trailer-left {
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 18px 16px;
+    border-radius: 0px 24px 24px 0px;
+  }
+}
+
+.carousel-indicators .active {
+  background-color: var(--primary) !important;
+  border-radius: 4px !important;
 }
