@@ -411,7 +411,7 @@ p.feedback-p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 98%;
+  width: 100%;
   align-items: center;
 }
 
@@ -647,6 +647,7 @@ footer {
 
   .novidade-image {
     margin-bottom: 24px;
+    height: 40%;
   }
 
   .novidade-text {
@@ -759,4 +760,15 @@ footer {
 .carousel-indicators .active {
   background-color: var(--primary) !important;
   border-radius: 4px !important;
+}
+
+/*
+    MOBILE!
+*/
+
+.mobile {
+  display: none !important;
+}
+
+@media (max-width: 1200px) {
 }
