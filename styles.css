@@ -647,7 +647,8 @@ footer {
 
   .novidade-image {
     margin-bottom: 24px;
-    height: 40%;
+    max-height: 10% !important;
+    width: 100% !important;
   }
 
   .novidade-text {
