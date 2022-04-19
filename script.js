@@ -1,23 +1,14 @@
-const scrollDestaque = () => {
-  document
-    .getElementById("destaque")
-    .scrollIntoView({ behavior: "smooth", block: "end" });
-};
+let open = false;
 
-const scrollAvaliacoes = () => {
-  document
-    .getElementById("avaliacoes")
-    .scrollIntoView({ behavior: "smooth", block: "end" });
-};
-
-const scrollEntrevistas = () => {
-  document
-    .getElementById("entrevistas")
-    .scrollIntoView({ behavior: "smooth", block: "end" });
-};
-
-const scrollNovidades = () => {
-  document
-    .getElementById("novidades")
-    .scrollIntoView({ behavior: "smooth", block: "end" });
+const openMenu = () => {
+  if (open) {
+    document.getElementsByClassName("mobile")[0].style = "display: none";
+    document.getElementsByClassName("header")[0].style =
+      "background-color: rgba(16, 17, 20, 0.8)";
+  } else {
+    document.getElementsByClassName("mobile")[0].style = "display: flex";
+    document.getElementsByClassName("header")[0].style =
+      "background-color: #101114";
+  }
+  open = !open;
 };

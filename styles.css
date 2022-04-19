@@ -47,6 +47,13 @@ div.header {
   justify-content: space-between;
 }
 
+.hamburguer-icon {
+  display: none;
+  height: 19px;
+  width: 22px;
+  cursor: pointer;
+}
+
 .navs-container {
   display: flex;
   align-items: center;
@@ -606,6 +613,10 @@ footer {
     display: none;
   }
 
+  .hamburguer-icon {
+    display: block;
+  }
+
   .movie-container {
     margin-top: 24px !important;
   }
@@ -702,6 +713,11 @@ footer {
   }
 }
 
+@media (max-width: 991px) {
+  .cta-trailer {
+    bottom: 24px !important;
+  }
+}
 @media (max-width: 768px) {
   .cta-trailer {
     position: absolute;
@@ -728,7 +744,7 @@ footer {
 
   .cta-trailer {
     position: absolute;
-    bottom: 24px;
+    bottom: 24px !important;
     left: 32px;
     background-color: white;
     color: var(--black1);
@@ -768,8 +784,33 @@ footer {
 */
 
 .mobile {
-  display: none !important;
+  display: none;
+  transition: 0.2s;
+  top: -20px;
 }
 
 @media (max-width: 1200px) {
+  .mobile {
+    position: fixed;
+    flex-direction: column;
+    padding-top: 16px;
+    top: 64px;
+    width: 100%;
+    z-index: 10;
+    background: var(--black1);
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .nav-link {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 8px;
+  }
+
+  .search-bar {
+    margin-top: 16px;
+    margin-bottom: 24px;
+    max-width: 94% !important;
+  }
 }
