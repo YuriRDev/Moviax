@@ -54,21 +54,21 @@
         <div class="navs-container">
           <ul class="nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
+              <a class="nav-link active" aria-current="page" href="#lancamentos"
                 >Lançamentos</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Destaque</a>
+              <a class="nav-link" href="#destaque">Destaque</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Avaliações</a>
+              <a class="nav-link" href="#avaliacoes">Avaliações</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Entrevistas & Makingof</a>
+              <a class="nav-link" href="#entrevistas">Entrevistas & Makingof</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Novidades</a>
+              <a class="nav-link" href="#novidades">Novidades</a>
             </li>
           </ul>
           <!-- Search bar-->
@@ -102,10 +102,11 @@
   <ul class="mobile" id="mobile-navbar" >
     <div class="container">
       <div class="row">
-        <a class="nav-link active" aria-current="page" href="#">Lançamentos</a>
-        <a class="nav-link active" aria-current="page" href="#">Destaque</a>
-        <a class="nav-link active" aria-current="page" href="#">Avaliações</a>
-        <a class="nav-link active" aria-current="page" href="#">Entrevistas & Makingof</a>
+        <a class="nav-link active" aria-current="page" onclick="closeMenu()" href="#lancamentos">Lançamentos</a>
+        <a class="nav-link active" aria-current="page" onclick="closeMenu()" href="#destaque">Destaque</a>
+        <a class="nav-link active" aria-current="page" onclick="closeMenu()" href="#avaliacoes">Avaliações</a>
+        <a class="nav-link active" aria-current="page" onclick="closeMenu()" href="#entrevistas">Entrevistas & Makingof</a>
+        <a class="nav-link active" aria-current="page" onclick="closeMenu()" href="#novidades">Novidades</a>
                   <!-- Search bar-->
                   <div class="search-bar">
                     <!-- Search Icon-->
@@ -132,11 +133,11 @@
 
     <main>
 
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div id="lancamentos" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#lancamentos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#lancamentos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#lancamentos" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">

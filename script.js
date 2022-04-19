@@ -12,3 +12,10 @@ const openMenu = () => {
   }
   open = !open;
 };
+
+const closeMenu = () => {
+  document.getElementsByClassName("mobile")[0].style = "display: none";
+  document.getElementsByClassName("header")[0].style =
+    "background-color: rgba(16, 17, 20, 0.8)";
+  open = false;
+};
