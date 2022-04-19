@@ -814,3 +814,50 @@ footer {
     max-width: 94% !important;
   }
 }
+
+/*
+
+Deixar o header bonito
+
+Large >= 992
+389.8
+
+
+Medium >= 720
+
+695.39
+
+Small >= 576
+
+626.48
+
+
+Extra Small < 576
+
+619
+
+*/
+
+@media only screen and (max-width: 1140px) and (min-width: 992px) {
+  .carousel {
+    height: 389.8px !important;
+  }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 720px) {
+  .carousel {
+    height: 695.39px !important;
+  }
+}
+
+@media only screen and (max-width: 719px) and (min-width: 575px) {
+  .carousel {
+    height: 626.48px !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .carousel {
+    height: 626.48px !important;
+  }
+}
