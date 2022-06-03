@@ -143,8 +143,8 @@
           <div class="carousel-item active">
             <div class="filme-container" id="filme-container-1" >
               <div class="container">
-                <div class="row">
-                  <div class="col-12 col-lg-6 col-xl-6" style="position: relative">
+                <div class="row " style="justify-content: center;">
+                  <div class="col-12 col-lg-3 col-xl-3" style="position: relative; margin-right: 8px;" id="movie-image-div">
                     <img class="movie-image" src="../assets/movie1.png" />
 
                   </div>
@@ -159,14 +159,10 @@
                       </p>
                     </div>
                     <div>
-                      <p class="movie-about-title">Diretor</p>
-                      <p class="movie-desc">Shawn Levy</p>
+                      <p class="movie-about-title">Lançamento</p>
+                      <p class="movie-desc">...</p>
                     </div>
                     <div>
-                      <p class="movie-about-title">Elenco</p>
-                      <p class="movie-desc">
-                        Ryan Reynolds | Mark Ruffalo | Walker Scobell
-                      </p>
                     </div>
                     <div class="star-display">
                       <svg
@@ -241,8 +237,8 @@
 
             <div class="filme-container" id="filme-container-2">
               <div class="container">
-                <div class="row">
-                  <div class="col-12 col-lg-6 col-xl-6" style="position: relative">
+                <div class="row " style="justify-content: center;">
+                  <div class="col-12 col-lg-3 col-xl-3" style="position: relative; margin-right: 8px;" id="movie-image-div">
                     <img class="movie-image" src="../assets/movie2.jpg" />
 
                   </div>
@@ -254,14 +250,10 @@
                       </p>
                     </div>
                     <div>
-                      <p class="movie-about-title">Diretor</p>
-                      <p class="movie-desc">Toby Meakins</p>
+                      <p class="movie-about-title">Lançamento</p>
+                      <p class="movie-desc">...</p>
                     </div>
                     <div>
-                      <p class="movie-about-title">Elenco</p>
-                      <p class="movie-desc">
-                        Asa Butterfield | Robert Englund | Ryan Gage
-                      </p>
                     </div>
                     <div class="star-display">
                       <svg
@@ -324,9 +316,9 @@
 
             <div class="filme-container" id="filme-container-3">
               <div class="container">
-                <div class="row">
-                  <div class="col-12 col-lg-6 col-xl-6" style="position: relative">
-                    <img class="movie-image" src="../assets/movie3.png" />
+                  <div class="row " style="justify-content: center;">
+                    <div class="col-12 col-lg-3 col-xl-3" style="position: relative; margin-right: 8px;" id="movie-image-div">
+                      <img class="movie-image" src="../assets/movie3.png" />
 
                   </div>
                   <div class="col-12 col-lg-6 col-xl-6 movie-container">
@@ -337,14 +329,10 @@
                       </p>
                     </div>
                     <div>
-                      <p class="movie-about-title">Diretores</p>
-                      <p class="movie-desc">Rodrigo Van Der Put | Eduardo Vaisman</p>
+                      <p class="movie-about-title">Lançamento</p>
+                      <p class="movie-desc">...</p>
                     </div>
                     <div>
-                      <p class="movie-about-title">Elenco</p>
-                      <p class="movie-desc">
-                        Cacau Protásio | Rafael Portugal | Jon Vlogs
-                      </p>
                     </div>
                     <div class="star-display">
                       <svg
@@ -482,7 +470,7 @@
             </div>
 
             <!-- Seccondary Button -->
-            <div class="btn-sec-container">
+            <div class="btn-sec-container" onclick="loadMoreMovies()" >
               <div class="btn-sec">
                 + Carregar mais filmes
               </div>

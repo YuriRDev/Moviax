@@ -35,6 +35,24 @@ const handleDisplay = () => {
       document.querySelector(
         `#filme-container-${i} .movie-background`
       ).src = `https://image.tmdb.org/t/p/w300_and_h450_bestv2${filmesPopular[i].poster_path}`;
+
+      document.querySelector(
+        `#filme-container-${i} > div.container > div > div.col-12.col-lg-6.col-xl-6.movie-container > div:nth-child(1) > h1`
+      ).innerHTML = filmesPopular[i].title;
+
+      if (filmesPopular[i].overview.length > 300) {
+        document.querySelector(
+          `#filme-container-${i} > div.container > div > div.col-12.col-lg-6.col-xl-6.movie-container > div:nth-child(1) > p`
+        ).innerHTML = `${filmesPopular[i].overview.substring(0, 300)}...`;
+      } else {
+        document.querySelector(
+          `#filme-container-${i} > div.container > div > div.col-12.col-lg-6.col-xl-6.movie-container > div:nth-child(1) > p`
+        ).innerHTML = `${filmesPopular[i].overview}`;
+      }
+
+      document.querySelector(
+        `#filme-container-${i} > div.container > div > div.col-12.col-lg-6.col-xl-6.movie-container > div:nth-child(2) > p.movie-desc`
+      ).innerHTML = filmesPopular[i].release_date;
     }
 
     // display em destaque
@@ -44,6 +62,16 @@ const handleDisplay = () => {
       filmesPopular[i + 3].poster_path
     }`;
   }
+};
+
+const loadMoreMovies = () => {
+  const moviestring = `<div class="image-component col-6 col-lg-3 col-xl-3" id="filme-1">
+  <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/uEPJQY1kEEz9XoZZ8rP6p9JUrmv.jpg" class="movie-display-image">
+</div>`;
+
+  document
+    .querySelector("#destaque > div > div > div.btn-sec-container")
+    .remove();
 };
 
 getPopular();
