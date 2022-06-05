@@ -1,5 +1,5 @@
 let open = false;
-
+//
 const openMenu = () => {
   if (open) {
     document.getElementsByClassName("mobile")[0].style = "display: none";
