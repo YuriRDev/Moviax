@@ -130,8 +130,12 @@ main {
 }
 
 .movie-image {
-  max-width: 100%;
+  max-width: 456px;
+  width: 100%;
+  max-height: 227px;
+  height: 100%;
   border-radius: 25px;
+  object-fit: cover;
 }
 
 .cta-trailer {
