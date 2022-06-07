@@ -15,6 +15,9 @@ const getPopular = () => {
     .then((out) =>
       out.results.map((item) => {
         filmesPopular.push(item);
+        setTimeout(() => {
+          handleDisplay();
+        }, 10);
       })
     )
     .catch((err) => console.log("error!"));
@@ -22,11 +25,11 @@ const getPopular = () => {
 
 const handleDisplay = () => {
   for (let i = 1; i <= 4; i++) {
-    console.log(
-      (document.querySelector(
-        `#filme-${i} img`
-      ).src = `https://image.tmdb.org/t/p/w300_and_h450_bestv2${filmesPopular[i].poster_path}`)
-    );
+    document.querySelector(
+      `#filme-${i} img`
+    ).src = `https://image.tmdb.org/t/p/w300_and_h450_bestv2${
+      filmesPopular[i + 3].poster_path
+    }`;
   }
 };
 
