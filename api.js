@@ -25,6 +25,19 @@ const getPopular = () => {
 
 const handleDisplay = () => {
   for (let i = 1; i <= 4; i++) {
+    // display lancamentos
+
+    if (i < 4) {
+      document.querySelector(
+        `#filme-container-${i} .container .row .col-12 .movie-image`
+      ).src = `https://image.tmdb.org/t/p/w300_and_h450_bestv2${filmesPopular[i].poster_path}`;
+
+      document.querySelector(
+        `#filme-container-${i} .movie-background`
+      ).src = `https://image.tmdb.org/t/p/w300_and_h450_bestv2${filmesPopular[i].poster_path}`;
+    }
+
+    // display em destaque
     document.querySelector(
       `#filme-${i} img`
     ).src = `https://image.tmdb.org/t/p/w300_and_h450_bestv2${
