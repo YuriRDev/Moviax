@@ -71,7 +71,7 @@ const loadMoreMovies = () => {
 
   const queryChildren = `#destaque > div > div > div.row.movies-display-container`;
 
-  document.querySelector(queryChildren);
+  document.querySelector(queryChildren).insertAdjacentHTML( 'beforeend', moviestring );
 
   document
     .querySelector("#destaque > div > div > div.btn-sec-container")
