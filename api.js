@@ -65,19 +65,22 @@ const handleDisplay = () => {
 };
 
 const loadMoreMovies = () => {
-  const moviestring = `<div class="image-component col-6 col-lg-3 col-xl-3" id="filme-1">
-  <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/uEPJQY1kEEz9XoZZ8rP6p9JUrmv.jpg" class="movie-display-image">
-</div>`;
+
 
 const queryChildren = `#destaque > div > div > div.row.movies-display-container`;
+
+
+  for (let i = 0; i < 4; i++) {
+    const filmeAtual = filmesPopular[i +8];
+    const moviestring = `<div class="image-component col-6 col-lg-3 col-xl-3" id="filme-${i + 5}">
+    <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2${filmeAtual.poster_path}" class="movie-display-image">
+  </div>`;
 
   document
     .querySelector(queryChildren)
     .insertAdjacentHTML("beforeend", moviestring);
 
-  for (let i = 0; i < 4; i++) {
-    console.log(filmesPopular[i+8])
-  }
+}
 
   document
     .querySelector("#destaque > div > div > div.btn-sec-container")
