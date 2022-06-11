@@ -88,7 +88,5 @@ const queryChildren = `#destaque > div > div > div.row.movies-display-container`
 };
 
 const getMovieData = () => {
-  
-}
 
-getPopular();
+}
