@@ -97,5 +97,6 @@ function getParameterByName(name, url = window.location.href) {
 }
 
 const getMovieData = () => {
-  
+  const movieId = getParameterByName('id')
+  console.log(movieId)
 };
