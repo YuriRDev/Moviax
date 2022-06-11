@@ -65,28 +65,37 @@ const handleDisplay = () => {
 };
 
 const loadMoreMovies = () => {
-
-
-const queryChildren = `#destaque > div > div > div.row.movies-display-container`;
-
+  const queryChildren = `#destaque > div > div > div.row.movies-display-container`;
 
   for (let i = 0; i < 4; i++) {
-    const filmeAtual = filmesPopular[i +8];
-    const moviestring = `<div class="image-component col-6 col-lg-3 col-xl-3" id="filme-${i + 5}">
-    <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2${filmeAtual.poster_path}" class="movie-display-image">
+    const filmeAtual = filmesPopular[i + 8];
+    const moviestring = `<div class="image-component col-6 col-lg-3 col-xl-3" id="filme-${
+      i + 5
+    }">
+    <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2${
+      filmeAtual.poster_path
+    }" class="movie-display-image">
   </div>`;
 
-  document
-    .querySelector(queryChildren)
-    .insertAdjacentHTML("beforeend", moviestring);
-
-}
+    document
+      .querySelector(queryChildren)
+      .insertAdjacentHTML("beforeend", moviestring);
+  }
 
   document
     .querySelector("#destaque > div > div > div.btn-sec-container")
     .remove();
 };
 
-const getMovieData = () => {
-
+function getParameterByName(name, url = window.location.href) {
+  name = name.replace(/[\[\]]/g, "\\$&");
+  var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+    results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return "";
+  return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
+
+const getMovieData = () => {
+  
+};
