@@ -76,13 +76,13 @@ const loadMoreMovies = () => {
 
   for (let i = 0; i < 4; i++) {
     const filmeAtual = filmesPopular[i + 8];
-    const moviestring = `<div class="image-component col-6 col-lg-3 col-xl-3" id="filme-${
+    const moviestring = `<a href="detalhes.html?id=${filmesPopular[i + 8].id}" class="image-component col-6 col-lg-3 col-xl-3" id="filme-${
       i + 5
     }">
     <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2${
       filmeAtual.poster_path
     }" class="movie-display-image">
-  </div>`;
+  </a>`;
 
     document
       .querySelector(queryChildren)
