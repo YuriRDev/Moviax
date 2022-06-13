@@ -34,9 +34,8 @@ const handleDisplay = () => {
         `#filme-container-${i} .container .row .col-12 .movie-image`
       ).src = `https://image.tmdb.org/t/p/w300_and_h450_bestv2${filmesPopular[i].poster_path}`;
 
+     document.getElementsByClassName('movie-link')[i -1].href = `detalhes.html?id=${filmesPopular[i].id}`
 
-
-      
       document.querySelector(
         `#filme-container-${i} .movie-background`
       ).src = `https://image.tmdb.org/t/p/w300_and_h450_bestv2${filmesPopular[i].poster_path}`;
