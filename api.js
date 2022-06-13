@@ -65,6 +65,9 @@ const handleDisplay = () => {
     ).src = `https://image.tmdb.org/t/p/w300_and_h450_bestv2${
       filmesPopular[i + 3].poster_path
     }`;
+    document.querySelector(
+      `#filme-${i}`
+    ).href = `detalhes.html?id=${filmesPopular[i + 3].id}`;
   }
 };
 
