@@ -15,74 +15,8 @@
   font-family: "Poppins" !important;
 }
 
-.nav-link {
-  color: var(--gray1) !important;
-  font-size: 14px;
-}
-
-.nav-item :hover {
-  opacity: 0.7;
-  transition: 0.3s;
-}
-
 body {
   background-color: var(--black1) !important;
-}
-
-header.header {
-  background: rgba(16, 17, 20, 0.8);
-  width: 100% !important;
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  z-index: 1000;
-  left: 0px;
-  backdrop-filter: blur(200px);
-}
-
-div.header {
-  height: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.hamburguer-icon {
-  display: none;
-  height: 19px;
-  width: 22px;
-  cursor: pointer;
-}
-
-.navs-container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.search-bar {
-  background-color: var(--black2);
-  width: 220px;
-  height: 43px;
-  border-radius: 8px;
-  margin-left: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 18px;
-  z-index: 100px;
-}
-
-.input-text {
-  border: none;
-  font-size: 14px;
-  width: 100%;
-  background-color: var(--black2);
-  padding-left: 12px;
-  outline: none;
-  font-family: "Poppins";
-  font-weight: normal !important;
-  color: var(--gray1);
 }
 
 /* Main! */
@@ -629,14 +563,6 @@ footer {
     bottom: 48px;
   }
 
-  .navs-container {
-    display: none;
-  }
-
-  .hamburguer-icon {
-    display: block;
-  }
-
   .movie-container {
     margin-top: 24px !important;
   }
@@ -804,41 +730,6 @@ footer {
   border-radius: 4px !important;
 }
 
-/*
-    MOBILE!
-*/
-
-.mobile {
-  display: none;
-  transition: 0.2s;
-  top: -20px;
-}
-
-@media (max-width: 1200px) {
-  .mobile {
-    position: fixed;
-    flex-direction: column;
-    padding-top: 16px;
-    top: 64px;
-    width: 100%;
-    z-index: 10;
-    background: var(--black1);
-    align-items: flex-start;
-    justify-content: flex-start;
-  }
-
-  .nav-link {
-    padding: 0px;
-    margin: 0px;
-    margin-bottom: 8px;
-  }
-
-  .search-bar {
-    margin-top: 16px;
-    margin-bottom: 24px;
-    max-width: 94% !important;
-  }
-}
 
 /*
 
