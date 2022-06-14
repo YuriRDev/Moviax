@@ -199,3 +199,25 @@ body {
     align-items: flex-start;
   }
 }
+
+/* 492 */
+@media (max-width: 492px) {
+  .movie-basic .big-container {
+    flex-direction: column !important;
+    width: 100%;
+    align-items: center;
+  }
+
+  .big-container div h1 {
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  .big-container .bottom-pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
