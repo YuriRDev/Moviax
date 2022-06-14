@@ -106,6 +106,8 @@ const loadMoreMovies = () => {
 //
 //
 
+let movieInfoData = {};
+
 function getParameterByName(name, url = window.location.href) {
   name = name.replace(/[\[\]]/g, "\\$&");
   var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
@@ -122,8 +124,13 @@ const getMovieData = () => {
   const url = `https://api.themoviedb.org/3/movie/${movieId}?api_key=d98a3066cf3cfae0c371bb89d5f3f2e6&language=pt-BR`;
   fetch(url)
     .then((res) => res.json())
-    .then((out) => console.log(out))
+    .then((out) => {
+      movieInfoData = out;
+      handleInfoDisplay();
+    })
     .catch((err) => console.log("error!"));
 };
 
-const handleInfoDisplay = () => {};
+const handleInfoDisplay = () => {
+  console.log(movieInfoData)
+};
