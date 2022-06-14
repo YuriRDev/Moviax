@@ -28,3 +28,121 @@
 body {
   background-color: var(--black1) !important;
 }
+
+.filme-container {
+  width: 100%;
+  height: 120px;
+  position: relative;
+  margin-top: 64px;
+}
+.movie-background {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  right: 0px;
+  height: 100%;
+  width: 100%;
+
+  /* Add the blur effect */
+  filter: blur(40px);
+  -webkit-filter: blur(40px);
+  z-index: -2;
+}
+
+.movie-background-linear {
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, #000000, #000000);
+  opacity: 0.4;
+  filter: blur(50px);
+  -webkit-filter: blur(50px);
+}
+
+/*
+<-=-=-==-=-==-=-=-=-=-=->
+  Informacoes basicas do filme  
+<-=-=-==-=-==-=-=-=-=-=->
+*/
+
+.movie-basic {
+  margin-top: -48px;
+}
+
+.movie-basic .big-container {
+  display: flex !important;
+  flex-direction: row !important;
+  width: 40%;
+}
+
+.movie-basic .row img {
+  height: 231px;
+  width: 181px;
+  object-fit: cover;
+  margin-right: 16px;
+}
+
+.big-container div h1 {
+  font-size: 20px;
+  color: var(--light);
+  font-weight: 600;
+  margin: 0px;
+  padding: 0px;
+}
+
+.tags-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-top: 24px;
+}
+
+.tag {
+  font-size: 12px;
+  color: var(--light);
+  font-weight: 500;
+  padding: 4px 16px;
+  border: solid 2px var(--primary);
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/*
+<-=-=-==-=-==-=-=-=-=-=->
+  Informacoes medias do site
+<-=-=-==-=-==-=-=-=-=-=->
+*/
+
+.avaliacoes {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.avaliacao-row {
+  display: flex;
+  align-items: center;
+}
+
+.star-container {
+  height: 24px;
+  width: 24px;
+}
+
+.avaliacao-row h3 {
+  color: #f9a400;
+  font-size: 16px;
+  margin-top: 14px;
+  margin-left: 4px;
+}
+
+.avaliacoes p {
+  color: var(--gray2);
+  font-size: 14px;
+  font-weight: 600;
+}

@@ -132,5 +132,5 @@ const getMovieData = () => {
 };
 
 const handleInfoDisplay = () => {
-  console.log(movieInfoData)
+  console.log(movieInfoData);
 };
