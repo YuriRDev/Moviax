@@ -34,7 +34,9 @@ const handleDisplay = () => {
         `#filme-container-${i} .container .row .col-12 .movie-image`
       ).src = `https://image.tmdb.org/t/p/w300_and_h450_bestv2${filmesPopular[i].poster_path}`;
 
-     document.getElementsByClassName('movie-link')[i -1].href = `detalhes.html?id=${filmesPopular[i].id}`
+      document.getElementsByClassName("movie-link")[
+        i - 1
+      ].href = `detalhes.html?id=${filmesPopular[i].id}`;
 
       document.querySelector(
         `#filme-container-${i} .movie-background`
@@ -65,9 +67,9 @@ const handleDisplay = () => {
     ).src = `https://image.tmdb.org/t/p/w300_and_h450_bestv2${
       filmesPopular[i + 3].poster_path
     }`;
-    document.querySelector(
-      `#filme-${i}`
-    ).href = `detalhes.html?id=${filmesPopular[i + 3].id}`;
+    document.querySelector(`#filme-${i}`).href = `detalhes.html?id=${
+      filmesPopular[i + 3].id
+    }`;
   }
 };
 
@@ -76,9 +78,9 @@ const loadMoreMovies = () => {
 
   for (let i = 0; i < 4; i++) {
     const filmeAtual = filmesPopular[i + 8];
-    const moviestring = `<a href="detalhes.html?id=${filmesPopular[i + 8].id}" class="image-component col-6 col-lg-3 col-xl-3" id="filme-${
-      i + 5
-    }">
+    const moviestring = `<a href="detalhes.html?id=${
+      filmesPopular[i + 8].id
+    }" class="image-component col-6 col-lg-3 col-xl-3" id="filme-${i + 5}">
     <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2${
       filmeAtual.poster_path
     }" class="movie-display-image">
@@ -94,6 +96,16 @@ const loadMoreMovies = () => {
     .remove();
 };
 
+//
+//
+//
+/////////////////////////
+//////// INFO PAGE //////
+/////////////////////////
+//
+//
+//
+
 function getParameterByName(name, url = window.location.href) {
   name = name.replace(/[\[\]]/g, "\\$&");
   var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
@@ -104,6 +116,14 @@ function getParameterByName(name, url = window.location.href) {
 }
 
 const getMovieData = () => {
-  const movieId = getParameterByName('id')
-  console.log(movieId)
+  const movieId = getParameterByName("id");
+  console.log(movieId);
+
+  const url = `https://api.themoviedb.org/3/movie/${movieId}?api_key=d98a3066cf3cfae0c371bb89d5f3f2e6&language=pt-BR`;
+  fetch(url)
+    .then((res) => res.json())
+    .then((out) => console.log(out))
+    .catch((err) => console.log("error!"));
 };
+
+const handleInfoDisplay = () => {};
