@@ -186,3 +186,16 @@ body {
 .sinopse-container .producao-list p {
   font-size: 14px;
 }
+
+@media (max-width: 768px) {
+  .sinopse-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .sinopse-container .infos {
+    width: 100%;
+  }
+  .avaliacoes {
+    align-items: flex-start;
+  }
+}
