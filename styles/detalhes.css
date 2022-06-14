@@ -84,6 +84,7 @@ body {
   width: 181px;
   object-fit: cover;
   margin-right: 16px;
+  border-radius: 8px;
 }
 
 .big-container div h1 {
@@ -118,6 +119,36 @@ body {
 <-=-=-==-=-==-=-=-=-=-=->
 */
 
+.sinopse-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.movie-medio {
+  margin-top: 48px;
+}
+
+.sinopse-container .infos {
+  width: 50%;
+}
+
+.sinopse-container div h1 {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--light);
+}
+
+.sinopse-container div span {
+  color: var(--primary);
+}
+
+.sinopse-container div p {
+  color: var(--gray1);
+  font-size: 16px;
+  font-weight: 300;
+}
+
 .avaliacoes {
   display: flex;
   align-items: center;
@@ -145,4 +176,13 @@ body {
   color: var(--gray2);
   font-size: 14px;
   font-weight: 600;
+}
+
+.sinopse-container h2 {
+  font-size: 16px;
+  margin-top: 32px;
+}
+
+.sinopse-container .producao-list p {
+  font-size: 14px;
 }
