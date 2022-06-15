@@ -133,4 +133,23 @@ const getMovieData = () => {
 
 const handleInfoDisplay = () => {
   console.log(movieInfoData);
+  // image
+  document.querySelector(
+    "body > main > div.container.movie-basic > div > div > img"
+  ).src = `https://image.tmdb.org/t/p/w300_and_h450_bestv2${movieInfoData.poster_path}`;
+  // texts
+  document.getElementById("title").innerHTML = movieInfoData.title;
+  document.getElementById("sinopse").innerHTML = movieInfoData.overview;
+  document.getElementById("avaliacao").innerHTML = movieInfoData.vote_average;
+  document.getElementById(
+    "avaliacao_total"
+  ).innerHTML = `${movieInfoData.vote_count} avaliações`;
+
+  //componentes
+  document.querySelector("#tags").innerHTML = "";
+  movieInfoData.genres.map((item) => {
+    document
+      .querySelector("#tags")
+      .insertAdjacentHTML("beforeend", `<div class="tag">${item.name}</div>`);
+  });
 };

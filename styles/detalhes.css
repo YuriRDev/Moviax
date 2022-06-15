@@ -76,7 +76,7 @@ body {
 .movie-basic .big-container {
   display: flex !important;
   flex-direction: row !important;
-  width: 40%;
+  width: 100%;
 }
 
 .movie-basic .row img {
