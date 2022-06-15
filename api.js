@@ -152,4 +152,11 @@ const handleInfoDisplay = () => {
       .querySelector("#tags")
       .insertAdjacentHTML("beforeend", `<div class="tag">${item.name}</div>`);
   });
+  // estudios
+  document.querySelector("#producao").innerHTML = "";
+  movieInfoData.genres.map((item) => {
+    document
+      .querySelector("#producao")
+      .insertAdjacentHTML("beforeend", `<p>${item.name}</p>`);
+  });
 };
