@@ -185,6 +185,8 @@ body {
 
 .sinopse-container .producao-list p {
   font-size: 14px;
+  margin: 0px;
+  margin-top: 4px;
 }
 
 @media (max-width: 768px) {
