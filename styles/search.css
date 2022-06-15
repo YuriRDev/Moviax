@@ -1,0 +1,16 @@
+:root {
+  --primary: #9146ff;
+  --primary1: #381171;
+  --light: #ffffff;
+  --gray1: #b3b0b8;
+  --gray2: #7c7a80;
+  --black1: #101114;
+  --black2: #1e1f24;
+  --black3: #2b2c33;
+  --black4: #454652;
+}
+
+* {
+  color: var(--light);
+  font-family: "Poppins" !important;
+}
