@@ -154,7 +154,7 @@ const handleInfoDisplay = () => {
   });
   // estudios
   document.querySelector("#producao").innerHTML = "";
-  movieInfoData.genres.map((item) => {
+  movieInfoData.production_companies.map((item) => {
     document
       .querySelector("#producao")
       .insertAdjacentHTML("beforeend", `<p>${item.name}</p>`);

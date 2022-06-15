@@ -520,44 +520,6 @@ div.novidades-container {
   cursor: pointer;
 }
 
-footer {
-  width: 100%;
-  padding: 32px;
-  background-color: var(--black2);
-  margin-top: 48px;
-  padding-bottom: 48px;
-}
-
-.copyright {
-  color: var(--gray1);
-  font-size: 14px;
-  font-weight: 400;
-  margin: 0px;
-  padding: 0px;
-}
-
-.copyright span {
-  color: var(--light);
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.copyright-svg-icon {
-  height: 32px;
-  width: 32px;
-}
-
-.aligned-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.margintop {
-  margin-top: 64px !important ;
-}
-
 @media (max-width: 1200px) {
   a.cta-trailer.duo {
     bottom: 48px;
@@ -730,7 +692,6 @@ footer {
   border-radius: 4px !important;
 }
 
-
 /*
 
 Deixar o header bonito
@@ -778,8 +739,7 @@ Extra Small < 576
   }
 }
 
-
-@media (max-width: 720px){
+@media (max-width: 720px) {
   #movie-image-div {
     display: flex !important;
     align-items: center !important;

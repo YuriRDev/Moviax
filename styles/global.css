@@ -126,3 +126,45 @@ div.header {
     max-width: 94% !important;
   }
 }
+
+/*
+  FOOTER
+*/
+
+footer {
+  width: 100%;
+  padding: 32px;
+  background-color: var(--black2);
+  margin-top: 48px;
+  padding-bottom: 48px;
+}
+
+.copyright {
+  color: var(--gray1);
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
+}
+
+.copyright span {
+  color: var(--light);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.copyright-svg-icon {
+  height: 32px;
+  width: 32px;
+}
+
+.aligned-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.margintop {
+  margin-top: 64px !important ;
+}

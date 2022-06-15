@@ -183,6 +183,10 @@ body {
   margin-top: 32px;
 }
 
+.producao-list {
+  margin-bottom: 24px;
+}
+
 .sinopse-container .producao-list p {
   font-size: 14px;
   margin: 0px;
