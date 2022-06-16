@@ -112,13 +112,14 @@ select {
   width: 100%;
   padding: 0px;
   margin: 0px;
+  border-radius: 8px;
 }
 
 .movie-search .bottom {
   position: absolute;
   bottom: 0px;
   width: 306px;
-  background: rgba(33, 33, 33, 0.5);
+  background: rgba(33, 33, 33, 0.8);
   backdrop-filter: blur(10px);
   border-radius: 0px 0px 8px 8px;
   padding: 18px;
@@ -150,4 +151,36 @@ select {
   margin: auto 0px;
   margin-top: 10px;
   margin-left: 8px;
+}
+
+@media (max-width: 1400px) {
+  .movie-search .bottom {
+    width: 261px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .movie-search .bottom {
+    width: 216px;
+  }
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+  .movie-search .bottom {
+    width: 92%;
+  }
+}
+
+@media (max-width: 576px) {
+  .submit-cta {
+    width: 100% !important;
+    margin-top: 24px;
+  }
+
+  .region-style {
+    margin-top: 24px !important;
+  }
 }
