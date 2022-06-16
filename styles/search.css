@@ -14,3 +14,56 @@
   color: var(--light);
   font-family: "Poppins" !important;
 }
+
+body {
+  background-color: var(--black1) !important;
+}
+
+/*
+  Header component
+*/
+
+.header-title {
+  margin-top: 96px;
+}
+
+.header-title h1 {
+  width: 350px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.header-title span {
+  color: var(--primary);
+}
+
+.header-title p {
+  font-weight: 300;
+  color: var(--gray1);
+  margin-top: 8px;
+}
+
+/*
+Querys
+*/
+
+.query-container {
+  margin-top: 48px;
+}
+
+input {
+  border: none;
+  outline: none;
+  height: 45px;
+  border-radius: 5px;
+}
+
+.title-query {
+  height: 45px;
+  padding-left: 12px;
+  color: var(--light);
+  background-color: var(--black2);
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 14px;
+}
