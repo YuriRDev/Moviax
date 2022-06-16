@@ -166,7 +166,7 @@ const displaySearchMovies = (info) => {
   document.querySelector("#movies-display");
   info.results.map((item) => {
     const htmlAppend = `
-    <div class="col-3 movie-search">
+    <div class="col-3 movie-search" onclick=location.href='/html/detalhes.html?id=${item.id}' >
     <img
       src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/${item.poster_path}"
     />
