@@ -58,12 +58,41 @@ input {
   border-radius: 5px;
 }
 
+select {
+  border: none;
+  outline: none;
+  height: 45px;
+  border-radius: 5px;
+  background-color: var(--black2);
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px !important;
+  padding-left: 12px;
+  color: var(--gray1);
+}
+
 .title-query {
   height: 45px;
   padding-left: 12px;
-  color: var(--light);
+  color: var(--gray1);
   background-color: var(--black2);
   font-family: "Poppins";
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
+}
+
+.submit-cta {
+  background: #9146ff;
+  font-weight: 400;
+  transition: 0.2s;
+  width: 80% !important;
+  font-size: 14px;
+}
+
+.submit-cta:hover {
+  opacity: 0.9;
+}
+
+.submit-cta:active {
+  opacity: 0.8;
 }
