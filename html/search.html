@@ -194,36 +194,35 @@
             type="text"
             class="title-query"
             name=""
-            id=""
+            id="title-query"
             placeholder="Título do filme"
           />
         </div>
         <div class="col-2">
-          <select style="width: 100%" name="ano">
-            <option value="todos" selected>Ano: qualquer</option>
-            <option value="2022" selected>Ano: 2022</option>
-            <option value="2021" selected>Ano: 2021</option>
-            <option value="2020" selected>Ano: 2020</option>
-            <option value="2019" selected>Ano: 2019</option>
-            <option value="2018" selected>Ano: 2018</option>
-            <option value="2017" selected>Ano: 2017</option>
-            <option value="2016" selected>Ano: 2016</option>
+          <select style="width: 100%" name="ano" id="ano">
+            <option value="" selected>Ano: qualquer</option>
+            <option value="2022">Ano: 2022</option>
+            <option value="2021">Ano: 2021</option>
+            <option value="2020">Ano: 2020</option>
+            <option value="2019">Ano: 2019</option>
+            <option value="2018">Ano: 2018</option>
+            <option value="2017">Ano: 2017</option>
+            <option value="2016">Ano: 2016</option>
           </select>
         </div>
         <div class="col-2">
-          <select style="width: 100%" name="loc">
-            <option value="todos" selected>Região: todos</option>
-            <option value="Estados Unidos" selected>
-              Região: Estados Unidos
-            </option>
-            <option value="México" selected>Região: México</option>
-            <option value="Brasil" selected>Região: Brasil</option>
-            <option value="Espanha" selected>Região: Espanha</option>
-            <option value="Índia" selected>Região: Índia</option>
+          <select style="width: 100%" name="loc" id="loc">
+            <option value="" selected>Região: todos</option>
+            <option value="US">Região: Estados Unidos</option>
+            <option value="MX">Região: México</option>
+            <option value="BR">Região: Brasil</option>
+            <option value="ES">Região: Espanha</option>
+            <option value="IN">Região: Índia</option>
           </select>
         </div>
         <div class="col-2">
           <input
+            onclick="searchMovie()"
             class="submit-cta"
             style="width: 100%"
             type="submit"
@@ -233,6 +232,13 @@
           />
         </div>
       </div>
+    </div>
+
+    <!-------------------->
+    <!----- Movies ------->
+    <!-------------------->
+    <div class="container">
+      <div class="row" id="movies-display"></div>
     </div>
   </body>
   <script src="../script.js"></script>

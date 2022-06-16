@@ -96,3 +96,58 @@ select {
 .submit-cta:active {
   opacity: 0.8;
 }
+
+/*
+  Movies Founded
+*/
+
+.movie-search {
+  width: 100%;
+  margin-top: 48px !important;
+  position: relative;
+  border-radius: 8px;
+}
+
+.movie-search img {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+.movie-search .bottom {
+  position: absolute;
+  bottom: 0px;
+  width: 306px;
+  background: rgba(33, 33, 33, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 0px 0px 8px 8px;
+  padding: 18px;
+}
+
+.bottom h3 {
+  padding: 0px;
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.avaliacao {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.avaliacao .star {
+  height: 16px;
+  width: 16px;
+}
+
+.avaliacao p {
+  color: #f9a400;
+  font-size: 16px;
+  font-weight: 500;
+  margin: auto 0px;
+  margin-top: 10px;
+  margin-left: 8px;
+}
